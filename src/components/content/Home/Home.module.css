@@ -1,0 +1,47 @@
+.wrapper {
+  min-height: 75vh;
+  padding-top: 25vh;
+}
+
+.header {
+  font-size: 15pt;
+}
+
+.name {
+  font-size: 80pt;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.para {
+  margin-top: 10px;
+  font-size: 15pt;
+}
+
+.blinkingCursor {
+  font-size: 100pt;
+  padding-right: 20px;
+  display: inline-block;
+  color: #cca43b;
+}
+
+.blinkingCursor span {
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.4s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 810px) {
+  .name {
+    font-size: 60pt;
+  }
+}

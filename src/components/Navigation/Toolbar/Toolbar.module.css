@@ -1,0 +1,41 @@
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #363636; */
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 90;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  animation: slide-in 1s linear alternate;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-56px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.DesktopOnly {
+  width: 100%;
+}
+
+@media (max-width: 810px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

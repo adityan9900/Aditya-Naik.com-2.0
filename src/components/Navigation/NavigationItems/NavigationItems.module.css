@@ -1,0 +1,83 @@
+.NavigationItems {
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-flow: column;
+  min-width: 640px;
+  /* border: 3px solid green; */
+}
+
+.icon {
+  font-size: 22pt;
+  margin: 10px;
+  padding-bottom: 6px;
+  transition: 0.3s;
+}
+
+.navGroups {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* border: 1px solid green; */
+}
+
+.iconGroup {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.icon a:hover {
+  color: #cca43b !important;
+  cursor: pointer;
+}
+
+.icon a {
+  color: white;
+  outline: none;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.icon a:active {
+  text-decoration: none;
+}
+
+.icon a:visited {
+  text-decoration: none;
+}
+
+@media (min-width: 810px) {
+  .NavigationItems {
+    flex-flow: row;
+  }
+}
+
+@media (max-width: 810px) {
+  .NavigationItems {
+    min-width: 0px;
+  }
+
+  .navGroups {
+    flex-direction: column;
+  }
+
+  .aboutMeLink {
+    margin-left: -20px;
+  }
+
+  .iconGroup {
+    display: flex;
+    /* border: 3px solid green; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60px;
+    padding: none;
+    margin-left: -30px;
+  }
+}

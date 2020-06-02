@@ -1,0 +1,110 @@
+.wrapper {
+  min-height: 75vh;
+  padding-top: 25vh;
+}
+
+.header {
+  font-size: 40pt;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #000000;
+}
+
+.body {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.toggles {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.toggle {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #000000;
+  border-left: 1px solid #000000;
+  white-space: nowrap;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.activeToggle {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: #000000;
+  color: #ffffff;
+  border-left: 1px solid #000000;
+  white-space: nowrap;
+  transition: 0.3s;
+  margin: 0;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  cursor: pointer;
+  /* color: #cca43b; */
+  /* background: #00000009; */
+  background: #000000;
+  color: #ffffff;
+}
+
+.experienceTitle {
+  font-size: 20pt;
+  color: #000000;
+}
+
+.date {
+  margin-top: 20px;
+  color: #cca43b;
+}
+
+.para {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.company a {
+  text-decoration: none;
+  color: #cca43b;
+  transition: 0.3s;
+}
+
+.company a:hover {
+  color: #000000;
+}
+
+@media (max-width: 810px) {
+  .header {
+    font-size: 30pt;
+  }
+}
+
+@media (max-width: 650px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .toggles {
+    flex-direction: row;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+
+  .toggle {
+    border-bottom: 1px solid #000000;
+    border-left: none;
+  }
+
+  .activeToggle {
+    border-bottom: 1px solid #000000;
+    border-left: none;
+  }
+}

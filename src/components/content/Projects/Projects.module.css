@@ -1,0 +1,21 @@
+.wrapper {
+  min-height: 75vh;
+  padding-top: 25vh;
+}
+
+.header {
+  font-size: 40pt;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.headerWrapper {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 810px) {
+  .header {
+    font-size: 30pt;
+  }
+}
