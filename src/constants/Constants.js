@@ -65,8 +65,10 @@ export const EXPERIENCES_LIST = [
     title: "Software Engineering Intern",
     company: "Fidelity Investments",
     text:
-      "I am extremely excited to start my second internship in a few weeks. Come back in a bit when \
-            I have more to share about my experience!",
+      "At Fidelity I worked with Selenium and Cucumber to test one of their brokerage products. \
+        Additionally, I worked with Keras, Tensorflow and Flask to classify images and identify \
+        errors in other products. I was also able to learn a lot about the financial sector as \
+        including basic options strategies and how financial companies monetize their products.",
     date: "June - August 2020",
     location: "Merrimack, NH",
     link: "https://www.fidelity.com/",
