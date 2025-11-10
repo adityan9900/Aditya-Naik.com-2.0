@@ -1,5 +1,46 @@
 export const PROJECTS_LIST = [
   {
+    title: "DUBB CLUB",
+    imageName: "DubbClub.png",
+    text:
+      "Dubb Club is a site made to show custom sports predictions for various leagues. \
+      The project was developed as part of a senior project by myself and 4 others. Using \
+      recent and live data, Dubb Club shows a user predicted winners of upcoming games, allows \
+      them to vote on who they think the winner is and customize their dashboard through \
+      favoriting. I also worked on developing a mobile app as a companion for the site. Dubb Club \
+      does a whole lot more as well, so check out our site if you're interested!",
+    date: "January 2021 - May 2021",
+    link: "https://github.com/hughbromund/DubbClub"
+    languages: ["Express.js", "MongoDB", "Cloudflare", "React", "Python", "Flask", "SwiftUI"],
+  },
+  {
+    title: "JUSTIFI",
+    imageName: "Justifi.png",
+    text:
+      "Justifi was created with 2 friends for Boilermake VIII and took 2nd place. \
+        The project was a mobile app that allowed users to create a chain of video questions \
+        and responses. The backend functionality also allowed us to filter out videos with \
+        toxic and vulgar content. Additionally, the app used the same process to categorize \
+        videos and display them to users having liked videos in similar categories. This \
+        created a safe environment as well as a curated one.",
+    date: "January 2021",
+    link: "https://github.com/hughbromund/Justifi",
+    languages: ["SwiftUI", "Python", "Express.js", "MongoDB", "Cloudflare", "React"],
+  },
+  {
+    title: "MARKET GO BRR",
+    imageName: "MarketGoBrr.png",
+    text:
+      "MarketGoBrr was a project developed for VandyHacks VII by myself and 3 friends \
+        and placed top 4 in the competition. The site (when functional) looks at a \
+        twitter user's tweet history and analyzes their sentiment. Using this, and \
+        an input stock price, it calculates a measure of how much a specific user's \
+        tweets correlates to a change in stock price.",
+    date: "October 2020",
+    link: "https://github.com/hughbromund/MarketGoBrr",
+    languages: ["React, Express, Node.js, MongoDB"],
+  },
+  {
     title: "ADITYA-NAIK.COM",
     imageName: "AdityaNaikSite.png",
     text:
@@ -20,7 +61,7 @@ export const PROJECTS_LIST = [
             that allowed individuals to manage a simualted stocks, create a budget and become \
             more financial literate.",
     date: "January - May 2020",
-    link: "https://finex.money/",
+    link: "https://github.com/hughbromund/FINEX",
     languages: ["React", "Express", "Node.js", "MongoDB"],
   },
   {
@@ -61,6 +102,18 @@ export const PROJECTS_LIST = [
 ];
 
 export const EXPERIENCES_LIST = [
+    {
+    title: "Software Development Engineer",
+    company: "Amazon",
+    text:
+      "At Amazon I worked on the Alexa Mobile application, primarily as a mobile engineer. \
+        Specifically I worked on features such as favorites, which allowed users to quickly interact \
+        with their most commonly used items. This feature, as well as many others are used by millions \
+        worldwide.",
+    date: "January 20222 - March 2025",
+    location: "Seattle, WA",
+    link: "https://www.amazon.com/",
+  },
   {
     title: "Software Engineering Intern",
     company: "Fidelity Investments",
