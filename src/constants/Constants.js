@@ -10,7 +10,7 @@ export const PROJECTS_LIST = [
       favoriting. I also worked on developing a mobile app as a companion for the site. Dubb Club \
       does a whole lot more as well, so check out our site if you're interested!",
     date: "January 2021 - May 2021",
-    link: "https://github.com/hughbromund/DubbClub"
+    link: "https://github.com/hughbromund/DubbClub",
     languages: ["Express.js", "MongoDB", "Cloudflare", "React", "Python", "Flask", "SwiftUI"],
   },
   {
