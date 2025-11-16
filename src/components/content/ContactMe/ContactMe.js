@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import classes from './ContactMe.module.css'
 import Resume from '../../../assets/resume/AdityaNaikResume.pdf'
+import DecryptedText from '../../hoc/DecryptedText/DecryptedText'
 
 // Import icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +12,11 @@ class ContactMe extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <div className={classes.header}>CONTACT ME</div>
+        <DecryptedText
+          text={'CONTACT ME'}
+          className={classes.header}
+          encryptedClassName={classes.header}
+        />
         <div className={classes.body}>
           <div className={classes.para}>
             I'm always looking for new and exciting opportunities, so feel free to reach out to me!

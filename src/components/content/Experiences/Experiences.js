@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import classes from './Experiences.module.css'
 import { EXPERIENCES_LIST } from '../../../constants/Constants'
+import DecryptedText from '../../hoc/DecryptedText/DecryptedText'
 
 class Experiences extends Component {
   state = {
@@ -35,7 +36,11 @@ class Experiences extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <div className={classes.header}>EXPERIENCE</div>
+        <DecryptedText
+          text={'EXPERIENCE'}
+          className={classes.header}
+          encryptedClassName={classes.header}
+        />
         <div className={classes.body}>
           {this.renderExperiences()}
           <div className={classes.summary}>

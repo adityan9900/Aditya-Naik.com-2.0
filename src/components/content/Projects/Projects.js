@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import classes from './Projects.module.css'
 import Project from './Project/Project'
 import { PROJECTS_LIST } from '../../../constants/Constants'
+import DecryptedText from '../../hoc/DecryptedText/DecryptedText'
 
 class Projects extends Component {
   renderProjects = () => {
@@ -37,7 +38,11 @@ class Projects extends Component {
     return (
       <div className={classes.wrapper}>
         <div className={classes.headerWrapper}>
-          <div className={classes.header}>PROJECTS</div>
+          <DecryptedText
+            text={'PROJECTS'}
+            className={classes.header}
+            encryptedClassName={classes.header}
+          />
         </div>
         {this.renderProjects()}
       </div>

@@ -1,12 +1,17 @@
 import React from 'react'
 import classes from './AboutMe.module.css'
 import profilePic from '../../../assets/profile/Me.jpeg'
+import DecryptedText from '../../hoc/DecryptedText/DecryptedText'
 
 const AboutMe = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.textWrapper}>
-        <div className={classes.header}>ABOUT ME</div>
+        <DecryptedText
+          text={'ABOUT ME'}
+          className={classes.header}
+          encryptedClassName={classes.header}
+        />
         <div className={classes.belowHeader}>
           <div className={classes.paragraphs}>
             <div className={classes.para}>
