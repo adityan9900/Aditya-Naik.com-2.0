@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-str */
 export const PROJECTS_LIST = [
   {
     title: "DUBB CLUB",
