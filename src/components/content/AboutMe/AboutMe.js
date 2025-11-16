@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "./AboutMe.module.css";
 import profilePic from "../../../assets/profile/Me.jpeg";
 
