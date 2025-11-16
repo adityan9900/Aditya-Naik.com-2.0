@@ -1,34 +1,13 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import classes from "./AboutMe.module.css";
-import Fade from "react-reveal/Fade";
-import Scramble from "react-scramble";
 import profilePic from "../../../assets/profile/Me.jpeg";
 
-class AboutMe extends Component {
-  render() {
+const AboutMe = () => {
     return (
       <div className={classes.wrapper}>
         <div className={classes.textWrapper}>
-          <Fade bottom cascade>
-            <Scramble
-              className={classes.header}
-              autoStart
-              text="ABOUT ME"
-              steps={[
-                {
-                  roll: 10,
-                  action: "+",
-                  type: "all",
-                },
-                {
-                  action: "-",
-                  type: "forward",
-                },
-              ]}
-            />
-          </Fade>
+          <div className={classes.header}>ABOUT ME</div>
           <div className={classes.belowHeader}>
-            <Fade bottom cascade>
               <div className={classes.paragraphs}>
                 <div className={classes.para}>
                   Hi there! My name is Aditya Naik. I am a software engineer
@@ -54,7 +33,6 @@ class AboutMe extends Component {
                   project that I may be involved in.
                 </div>
               </div>
-            </Fade>
             <div className={classes.imageWrapper}>
               <img src={profilePic} alt="me"></img>
             </div>
@@ -62,7 +40,6 @@ class AboutMe extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default AboutMe;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Parallax } from "react-parallax";
 import classes from "./Project.module.css";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 class Project extends Component {
   renderLanguages = () => {
@@ -30,7 +30,7 @@ class Project extends Component {
     if (this.props.direction === "right") {
       return (
         <div className={classes.belowHeaderRight}>
-          <Fade bottom cascade>
+          {/* <Fade bottom cascade> */}
             <div className={classes.textWrapperRight}>
               <div className={classes.projectTitle}>
                 <a
@@ -45,7 +45,7 @@ class Project extends Component {
               <div className={classes.para}>{this.props.text}</div>
               {this.renderLanguages()}
             </div>
-          </Fade>
+          {/* </Fade> */}
           <a
             href={this.props.link}
             target="_blank"
@@ -81,7 +81,7 @@ class Project extends Component {
               <div className={classes.innerDiv}></div>
             </Parallax>
           </a>
-          <Fade bottom cascade>
+          {/* <Fade bottom cascade> */}
             <div className={classes.textWrapperLeft}>
               <div className={classes.projectTitle}>
                 <a
@@ -96,7 +96,7 @@ class Project extends Component {
               <div className={classes.para}>{this.props.text}</div>
               {this.renderLanguages()}
             </div>
-          </Fade>
+          {/* </Fade> */}
         </div>
       );
     }

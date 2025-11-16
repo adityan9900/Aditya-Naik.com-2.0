@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import classes from "./Projects.module.css";
-import Scramble from "react-scramble";
 import Project from "./Project/Project";
 import { PROJECTS_LIST } from "../../../constants/Constants";
-import Fade from "react-reveal/Fade";
 
 class Projects extends Component {
   renderProjects = () => {
@@ -39,24 +37,7 @@ class Projects extends Component {
     return (
       <div className={classes.wrapper}>
         <div className={classes.headerWrapper}>
-          <Fade bottom cascade>
-            <Scramble
-              className={classes.header}
-              autoStart
-              text="PROJECTS"
-              steps={[
-                {
-                  roll: 10,
-                  action: "+",
-                  type: "all",
-                },
-                {
-                  action: "-",
-                  type: "forward",
-                },
-              ]}
-            />
-          </Fade>
+          <div className={classes.header}>PROJECTS</div>
         </div>
         {this.renderProjects()}
       </div>

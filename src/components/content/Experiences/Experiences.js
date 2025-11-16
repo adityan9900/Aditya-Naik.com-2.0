@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import classes from "./Experiences.module.css";
-import Fade from "react-reveal/Fade";
-import Scramble from "react-scramble";
 import { EXPERIENCES_LIST } from "../../../constants/Constants";
 
 class Experiences extends Component {
@@ -37,27 +35,9 @@ class Experiences extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <Fade bottom cascade>
-          <Scramble
-            className={classes.header}
-            autoStart
-            text="EXPERIENCE"
-            steps={[
-              {
-                roll: 10,
-                action: "+",
-                type: "all",
-              },
-              {
-                action: "-",
-                type: "forward",
-              },
-            ]}
-          />
-        </Fade>
+        <div className={classes.header}>EXPERIENCE</div>
         <div className={classes.body}>
           {this.renderExperiences()}
-          <Fade bottom cascade>
             <div className={classes.summary}>
               <div className={classes.experienceTitle}>
                 {EXPERIENCES_LIST[this.state.activeIndex]["title"]} -
@@ -78,7 +58,6 @@ class Experiences extends Component {
                 {EXPERIENCES_LIST[this.state.activeIndex]["text"]}
               </p>
             </div>
-          </Fade>
         </div>
       </div>
     );

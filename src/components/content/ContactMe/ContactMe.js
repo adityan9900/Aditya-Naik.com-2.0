@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import classes from "./ContactMe.module.css";
-import Fade from "react-reveal/Fade";
-import Scramble from "react-scramble";
 import Resume from "../../../assets/resume/AdityaNaikResume.pdf";
 
 // Import icons
@@ -13,25 +11,7 @@ class ContactMe extends Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <Fade bottom cascade>
-          <Scramble
-            className={classes.header}
-            autoStart
-            text="CONTACT ME"
-            steps={[
-              {
-                roll: 10,
-                action: "+",
-                type: "all",
-              },
-              {
-                action: "-",
-                type: "forward",
-              },
-            ]}
-          />
-        </Fade>
-        <Fade bottom cascade>
+        <div className={classes.header}>CONTACT ME</div>
           <div className={classes.body}>
             <div className={classes.para}>
               I'm always looking for new and exciting opportunities, so feel
@@ -45,8 +25,6 @@ class ContactMe extends Component {
               </a>
             </div>
           </div>
-        </Fade>
-        <Fade bottom cascade>
           <div className={classes.icons}>
             <div>
               <a
@@ -79,7 +57,6 @@ class ContactMe extends Component {
               </a>
             </div>
           </div>
-        </Fade>
       </div>
     );
   }
