@@ -1,6 +1,6 @@
-import React from "react";
-import { createRoot } from 'react-dom/client';
-import App from "./App";
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
 
 // ReactDOM.render(<App />, document.getElementById("root"));
 
@@ -9,10 +9,10 @@ import App from "./App";
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
 
-const container = document.getElementById('root');
-const root = createRoot(container); // Create a root
+const container = document.getElementById('root')
+const root = createRoot(container) // Create a root
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)

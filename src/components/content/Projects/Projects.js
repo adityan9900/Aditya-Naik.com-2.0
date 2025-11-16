@@ -1,37 +1,37 @@
-import React, { Component } from "react";
-import classes from "./Projects.module.css";
-import Project from "./Project/Project";
-import { PROJECTS_LIST } from "../../../constants/Constants";
+import React, { Component } from 'react'
+import classes from './Projects.module.css'
+import Project from './Project/Project'
+import { PROJECTS_LIST } from '../../../constants/Constants'
 
 class Projects extends Component {
   renderProjects = () => {
-    let projectsArr = [];
+    let projectsArr = []
 
-    let dir;
+    let dir
     for (let i = 0; i < PROJECTS_LIST.length; i++) {
       if (i % 2 === 0) {
-        dir = "right";
+        dir = 'right'
       } else {
-        dir = "left";
+        dir = 'left'
       }
 
-      let currProj = PROJECTS_LIST[i];
+      let currProj = PROJECTS_LIST[i]
       projectsArr[i] = (
         <Project
           key={i}
-          title={currProj["title"]}
-          imageName={currProj["imageName"]}
-          text={currProj["text"]}
-          date={currProj["date"]}
-          link={currProj["link"]}
-          languages={currProj["languages"]}
+          title={currProj['title']}
+          imageName={currProj['imageName']}
+          text={currProj['text']}
+          date={currProj['date']}
+          link={currProj['link']}
+          languages={currProj['languages']}
           direction={dir}
         />
-      );
+      )
     }
 
-    return <>{projectsArr}</>;
-  };
+    return <>{projectsArr}</>
+  }
 
   render() {
     return (
@@ -41,8 +41,8 @@ class Projects extends Component {
         </div>
         {this.renderProjects()}
       </div>
-    );
+    )
   }
 }
 
-export default Projects;
+export default Projects

@@ -1,18 +1,23 @@
-import React, { Component } from "react";
-import classes from "./NavigationItem.module.css";
+import React from 'react'
+import classes from './NavigationItem.module.css'
+import PropTypes from 'prop-types'
 
-class NavigationItem extends Component {
-  handleClick = () => {
-    this.props.clicked(this.props.elementID);
-  };
-
-  render() {
-    return (
-      <li onClick={this.handleClick} className={classes.NavigationItem}>
-        <div>{this.props.children}</div>
-      </li>
-    );
+const NavigationItem = ({ elementID, clicked, children }) => {
+  const handleClick = () => {
+    clicked(elementID)
   }
+
+  return (
+    <li onClick={handleClick} className={classes.NavigationItem}>
+      <div>{children}</div>
+    </li>
+  )
 }
 
-export default NavigationItem;
+NavigationItem.propTypes = {
+  elementID: PropTypes.string,
+  children: PropTypes.node,
+  clicked: PropTypes.func.isRequired,
+}
+
+export default NavigationItem

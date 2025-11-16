@@ -1,7 +1,7 @@
-import React from "react";
-import classes from "./Toolbar.module.css";
-import NavigationItems from "../NavigationItems/NavigationItems";
-import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
+import React from 'react'
+import classes from './Toolbar.module.css'
+import NavigationItems from '../NavigationItems/NavigationItems'
+import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle'
 
 const toolbar = (props) => (
   <div className={classes.Toolbar}>
@@ -10,6 +10,6 @@ const toolbar = (props) => (
       <NavigationItems scrollToDiv={props.scrollToLocation} />
     </div>
   </div>
-);
+)
 
-export default toolbar;
+export default toolbar
