@@ -6,7 +6,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-.NavigationItem a {
+.NavigationItem div {
   color: #ffffff;
   text-decoration: none;
   width: 100%;
@@ -16,7 +16,7 @@
   transition: border-bottom 0.3s, color 0.3s;
 }
 
-.NavigationItem a:hover {
+.NavigationItem div:hover {
   color: #cca43b;
   cursor: pointer;
 }
@@ -30,14 +30,14 @@
     align-items: center;
   }
 
-  .NavigationItem a {
+  .NavigationItem div {
     color: white;
     height: 100%;
     padding: 12px 10px;
     border-bottom: 4px solid transparent;
   }
 
-  .NavigationItem a:hover {
+  .NavigationItem div:hover {
     border-bottom: 4px solid #cca43b;
     color: #cca43b;
     cursor: pointer;

@@ -9,7 +9,7 @@ class NavigationItem extends Component {
   render() {
     return (
       <li onClick={this.handleClick} className={classes.NavigationItem}>
-        <a>{this.props.children}</a>
+        <div>{this.props.children}</div>
       </li>
     );
   }
