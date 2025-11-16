@@ -11,6 +11,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # [START app_yaml]
+runtime: nodejs
 env: flex
-runtime: nodejs20
+runtime_config:
+  operating_system: 'ubuntu22'
+  runtime_version: '20' # this tells GAE which major Node version to use
 # [END app_yaml]
