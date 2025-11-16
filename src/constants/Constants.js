@@ -103,6 +103,17 @@ export const PROJECTS_LIST = [
 
 export const EXPERIENCES_LIST = [
     {
+      title: "Software Engineer",
+      company: "Meta",
+      text:
+        "As a mobile engineer, I work on delivering new ad experiences to users and advertisers. Projects \
+          I work on include designing and developing new Instagram stories and feed ads as well as optimizing \
+          delivery of ad media to the client. More to come!",
+      date: "March 2025 - Present",
+      location: "New York, NY",
+      link: "https://www.meta.com/about/",
+    },
+    {
     title: "Software Development Engineer",
     company: "Amazon",
     text:
