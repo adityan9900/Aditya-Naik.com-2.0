@@ -13,6 +13,16 @@
 # [START app_yaml]
 runtime: nodejs
 env: flex
+handlers:
+  # Serve the main React app
+  - url: /
+    static_files: build/index.html
+    upload: build/index.html
+
+  # Serve all other static files (JS, CSS, images, etc.)
+  - url: /(.*)
+    static_files: build/\1
+    upload: build/(.*)
 runtime_config:
   operating_system: 'ubuntu22'
   runtime_version: '20' # this tells GAE which major Node version to use
