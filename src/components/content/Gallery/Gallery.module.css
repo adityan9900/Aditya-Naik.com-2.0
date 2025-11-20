@@ -1,0 +1,83 @@
+.wrapper {
+  min-height: 75vh;
+  padding-top: 25vh;
+}
+
+.galleryWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.header {
+  font-size: 40pt;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #000000;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 60vh; /* Fixed height to prevent expansion */
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.buttonsContainer {
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  max-height: 300px;
+}
+
+.galleryButton {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 49%;
+}
+
+.galleryButtonInner {
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #cca43b;
+  color: #cca43b;
+  border-radius: 3px;
+  transition: 0.3s;
+  letter-spacing: 3px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.galleryButton :hover {
+  background: #cca43b;
+  color: #ffffff;
+  cursor: pointer;
+}
