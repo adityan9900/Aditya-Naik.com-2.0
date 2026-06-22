@@ -11,7 +11,7 @@ import Projects from './components/content/Projects/Projects'
 import Experiences from './components/content/Experiences/Experiences'
 import Home from './components/content/Home/Home'
 import ContactMe from './components/content/ContactMe/ContactMe'
-import Gallery from './components/content/Gallery/Gallery'
+// import Gallery from './components/content/Gallery/Gallery'
 
 class App extends Component {
   state = {
