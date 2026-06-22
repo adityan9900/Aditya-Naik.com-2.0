@@ -55,9 +55,9 @@ class App extends Component {
               <Element name="contactElement">
                 <ContactMe />
               </Element>
-              <Element name="galleryElement">
+              {/* <Element name="galleryElement">
                 <Gallery />
-              </Element>
+              </Element> */}
             </div>
           </Layout>
         </div>
