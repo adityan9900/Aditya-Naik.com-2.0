@@ -11,6 +11,7 @@ import dubbclub from '../../../../assets/projects/DubbClub.png'
 import finex from '../../../../assets/projects/FinexHome.png'
 import justifi from '../../../../assets/projects/Justifi.png'
 import market from '../../../../assets/projects/MarketGoBrr.png'
+import unrack from '../../../../assets/projects/Unrack.png'
 
 const Project = ({ languages, direction, link, title, date, text, imageName }) => {
   const imageNameToImage = (imageName) => {
@@ -31,6 +32,8 @@ const Project = ({ languages, direction, link, title, date, text, imageName }) =
         return justifi
       case 'MarketGoBrr.png':
         return market
+      case 'Unrack.png':
+        return unrack
       default:
         return site
     }

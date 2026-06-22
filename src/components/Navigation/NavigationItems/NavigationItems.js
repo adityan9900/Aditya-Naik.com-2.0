@@ -19,6 +19,9 @@ const navigationItems = ({ scrollToDiv }) => {
         <NavigationItem elementID="contactElement" clicked={scrollToDiv}>
           CONTACT ME
         </NavigationItem>
+        <NavigationItem elementID="galleryElement" clicked={scrollToDiv}>
+          GALLERY
+        </NavigationItem>
       </ul>
     </div>
   )

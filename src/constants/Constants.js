@@ -1,6 +1,18 @@
 /* eslint-disable no-multi-str */
 export const PROJECTS_LIST = [
   {
+    title: 'Unrack',
+    imageName: 'Unrack.png',
+    text: "Unrack is a gym app for enthusiast lifters. As one myself, I was pretty tired \
+      with a lot of the existing apps out there not providing certain features. I decided \
+      to make my own. The app is complete with with gym location tracking, auto-location, alternate \
+      exercises and more. I'm still working on more updates and features to make it a truly great (and \
+      cheap) app. Check it out!",
+    date: 'April 2026 - Present',
+    link: 'https://unrack.net/',
+    languages: ['Swift', 'Supabase', 'AWS Amplify'],
+  },
+  {
     title: 'DUBB CLUB',
     imageName: 'DubbClub.png',
     text: "Dubb Club is a site made to show custom sports predictions for various leagues. \
